@@ -1,0 +1,55 @@
+.header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgb(134, 2, 2),
+    rgb(87, 2, 2),
+    rgb(20, 0, 0)
+  );
+}
+
+.header h1 {
+  margin-left: 2rem;
+  padding: 10px;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: white;
+}
+
+.list a:hover {
+  color: rgb(139, 139, 139);
+}
+
+.list a.active {
+  color: rgb(139, 139, 139);
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column; /* Stack the items vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+  .header h1 {
+    margin-left: 0; /* Remove the left margin on small screens */
+  }
+  .list {
+    width: 100%; /* Make the list take up the full width */
+    justify-content: space-around; /* Distribute the links evenly */
+  }
+}

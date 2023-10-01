@@ -1,0 +1,12 @@
+.graph-container {
+  width: 100%; /* Make the container take up the full width of its parent */
+  max-width: 600px; /* Limit the maximum width to 600px */
+  margin: 0 auto; /* Center the container */
+}
+
+@media (max-width: 600px) {
+  .graph-container {
+    max-width: 100%; /* On screens smaller than 600px, make the container take up the full width */
+    margin-left: -35px;
+  }
+}

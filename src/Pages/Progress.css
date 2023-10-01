@@ -1,0 +1,120 @@
+.progress {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.day-count-and-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.day-count {
+  font-size: xxx-large;
+}
+
+.graph {
+  max-width: 600px;
+}
+
+.graph canvas {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.task-done,
+.task-failed {
+  margin: 4px;
+  padding: 35px;
+  background-color: grey;
+  border: 1px solid white;
+  color: white;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.task-done:hover,
+.task-failed:hover {
+  animation: bounce 0.6s;
+}
+
+.transform button {
+  background: linear-gradient(
+    to right,
+    rgb(134, 2, 2),
+    rgb(87, 2, 2),
+    rgb(20, 0, 0)
+  );
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 5px;
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.transform button:hover {
+  color: rgb(139, 139, 139);
+}
+
+.transform button :active {
+  color: rgb(139, 139, 139);
+  text-decoration: underline;
+}
+
+.honest-message {
+  color: rgb(185, 37, 37);
+  font-family: "Sans-Serif";
+  margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+  .task-done,
+  .task-failed {
+    width: 150px;
+
+    transition: transform 0.3s;
+  }
+
+  .task-done.active,
+  .task-failed.active {
+    animation: bounce 0.6s;
+    transform: translateY(-20px);
+  }
+
+  .transform button {
+    width: 80%;
+    margin: 40px;
+    margin-top: 80px;
+  }
+  .honest-message {
+    text-align: center;
+    margin: 5px;
+  }
+}

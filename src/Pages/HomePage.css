@@ -1,0 +1,100 @@
+.background {
+  padding-top: 4rem; /* Adjust this value to move the heading and table more or less below */
+}
+
+.rules {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+  /* Adjust this value to move the heading more or less to the left */
+}
+
+.goal-heading {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.goal-content {
+  color: rgb(185, 37, 37);
+  font-family: "Sans-Serif";
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.rule-item {
+  display: table-row;
+}
+
+.rule-title-wrapper {
+  display: table-cell;
+  margin: 1rem;
+}
+
+.rule-title {
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(136, 135, 135);
+  color: white;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.rule-content {
+  display: table-cell;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 2rem;
+}
+
+/* Media Queries */
+/* Add a media query for screens with a maximum width of 600px */
+/* Add a media query for screens with a maximum width of 600px */
+/* Add a media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  .table-container {
+    overflow-x: hidden; /* Hide horizontal overflow */
+    padding: 0 1rem; /* Add padding to keep the table borders within the screen */
+  }
+
+  table {
+    max-width: calc(
+      100% - 2rem
+    ); /* Reduce the maximum width of the table container by 2rem */
+    border-collapse: collapse;
+  }
+
+  .rule-item {
+    display: block; /* Change the rule items to block elements for mobile */
+    margin-bottom: 1.5rem; /* Add some spacing between rule items */
+    border: 1px solid #ccc; /* Add a border to separate items */
+    padding: 1rem; /* Add padding to rule items */
+  }
+
+  .rule-title-wrapper {
+    display: block; /* Change rule titles to block elements for mobile */
+  }
+
+  .rule-title {
+    text-align: left; /* Align rule titles to the left */
+  }
+
+  .rule-content {
+    text-align: left; /* Align rule content to the left */
+    padding-left: 0; /* Remove left padding for rule content */
+  }
+  .goal-content {
+    text-align: center; /* Align goal content to the left */
+    margin: 5px;
+  }
+}

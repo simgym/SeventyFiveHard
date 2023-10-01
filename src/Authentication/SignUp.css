@@ -1,0 +1,73 @@
+.signup-title {
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add some space below the title */
+  font-size: 2em; /* Increase the font size */
+  margin-top: -400px;
+}
+/* In SignUp.css */
+.signup-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Add this line */
+  height: 100vh;
+}
+
+.signup-form {
+  background-color: rgb(88, 87, 87);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  width: 50%; /* Adjust as needed */
+  margin: 20px auto; /* Add this line */
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.button-signUp {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+}
+
+.button-signUp:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+}
+
+.button-signUp:active {
+  background-color: #003d80; /* Even darker blue when clicked */
+}
+
+.button-signUp:disabled {
+  background-color: grey;
+}
+
+@media (max-width: 600px) {
+  .signup-title {
+    font-size: 1.5em; /* Adjust font size for mobile screens */
+  }
+
+  .signup-form {
+    width: 80%; /* Adjust the width for mobile screens */
+    margin: 20px auto; /* Center horizontally on mobile screens */
+  }
+}

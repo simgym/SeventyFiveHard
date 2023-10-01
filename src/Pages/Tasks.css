@@ -1,0 +1,66 @@
+.edit-task a {
+  background: linear-gradient(
+    to right,
+    rgb(134, 2, 2),
+    rgb(87, 2, 2),
+    rgb(20, 0, 0)
+  );
+  color: white;
+  text-decoration: none;
+  padding: 20px; /* Increase padding for a larger background */
+  border-radius: 5px;
+  display: block; /* Make the link a block element */
+  width: 30%; /* Set width to cover more of the horizontal screen */
+  margin: auto; /* Center the link */
+  margin-top: 20px;
+}
+
+.edit-task a:hover {
+  color: rgb(139, 139, 139);
+}
+
+.edit-task a:active {
+  color: rgb(139, 139, 139);
+  text-decoration: underline;
+}
+
+.tasks-title {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.tasks-title h2,
+.tasks-added h2 {
+  margin-left: 30%;
+  text-align: left;
+}
+
+.tasks-diet,
+.tasks-workout {
+  background-color: grey;
+  border: 1px solid white;
+  color: white;
+  width: 40%; /* Adjust this value as needed */
+  margin: auto; /* Centers the block if width is less than 100% */
+  border-radius: 20px;
+}
+
+.emptySlot {
+  color: rgb(126, 4, 4);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .edit-task a {
+    width: 80%; /* Adjust this value as needed */
+  }
+  .tasks-title h2,
+  .tasks-added h2 {
+    margin-left: 10%; /* Adjust this value as needed */
+    text-align: center; /* Center the text on small screens */
+  }
+  .tasks-diet,
+  .tasks-workout {
+    width: 80%; /* Adjust this value as needed */
+  }
+}
