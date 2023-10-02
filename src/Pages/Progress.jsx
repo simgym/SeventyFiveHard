@@ -12,9 +12,9 @@ const Progress = () => {
   const [showStartOver, setShowStartOver] = useState(false);
   const [displayButton, setDisplayButton] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [showPortal, setShowPortal] = useState(false);
 
   const userID = useSelector((state) => state.databaseReducer.data);
+  const closePortal = useSelector((state) => state.portalReducer.condition);
 
   const successHandler = async () => {
     setDayCount((prevState) => prevState + 1);
@@ -47,6 +47,7 @@ const Progress = () => {
       );
       const data = await response.json();
       setDisplayButton(data.displayButton);
+
       setDayCount(data.dayCount || 0); // Use 0 as a default value if dayCount is not yet in Firebase
       setIsLoading(false);
     };
@@ -141,16 +142,20 @@ const Progress = () => {
               {showStartOver && <p>Start Over</p>}
               <div className="honest-message">
                 <p>
-                  "Embarking on a journey of transformation requires honesty and
+                  Embarking on a journey of transformation requires honesty and
                   commitment. If you truly aspire to become a better version of
                   yourself, please make sure to honestly click on the tick
                   button once per day, but only if you have successfully
                   completed your tasks for the day. Remember, consistency is key
                   and each honest click brings you one step closer to your goal.
-                  Your transformation is in your hands, make each day count!"
+                  Your transformation is in your hands, make each day count!
                 </p>
               </div>
-              {showPortal ? <ChallengeCompletePortal /> : ""}
+              {dayCount === 75 && !closePortal ? (
+                <ChallengeCompletePortal />
+              ) : (
+                ""
+              )}
             </div>
           ) : (
             <div className="transform">

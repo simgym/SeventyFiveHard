@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { authAction } from "../store/Redux";
-
+import { Link } from "react-router-dom";
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { databaseAction } from "../store/Redux_database";
@@ -86,6 +86,10 @@ const LogIn = () => {
             Submit
           </button>
         </form>
+        <p>Don't have an account</p>
+        <Link to="/signUp" className="register-link">
+          Register
+        </Link>
       </main>
     </>
   );

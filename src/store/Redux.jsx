@@ -1,6 +1,7 @@
 import { createSlice, configureStore } from "@reduxjs/toolkit";
 import databaseReducer from "./Redux_database";
 import taskReducer from "./Redux_taskData";
+import portalReducer from "./Redux_PortalHandler";
 
 const initialState = { auth: false };
 
@@ -19,6 +20,7 @@ const store = configureStore({
     authReducer: AuthSlice.reducer,
     databaseReducer: databaseReducer,
     taskReducer: taskReducer,
+    portalReducer: portalReducer,
   },
 });
 

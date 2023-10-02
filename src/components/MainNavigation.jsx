@@ -36,7 +36,7 @@ const MainNavigation = () => {
                       isActive ? "active" : undefined
                     }
                   >
-                    signUp
+                    signup
                   </NavLink>
                 </li>
                 <li>
@@ -46,7 +46,7 @@ const MainNavigation = () => {
                       isActive ? "active" : undefined
                     }
                   >
-                    logIn
+                    login
                   </NavLink>
                 </li>
               </>

@@ -7,6 +7,7 @@ import { getDatabase, ref, set } from "firebase/database";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { databaseAction } from "../store/Redux_database";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -130,6 +131,10 @@ const SignUp = () => {
             Submit
           </button>
         </form>
+        <p>Already have an account?</p>
+        <Link to="/logIn" className="signin-link">
+          Log in
+        </Link>
       </main>
     </>
   );

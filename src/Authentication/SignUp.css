@@ -1,3 +1,13 @@
+.signin-link {
+  color: rgb(86, 86, 252); /* Set text color to blue */
+  text-decoration: none; /* Remove underline */
+  margin-top: -15px;
+}
+
+.signin-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 .signup-title {
   text-align: center; /* Center the text */
   margin-bottom: 20px; /* Add some space below the title */
@@ -18,7 +28,7 @@
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
-  width: 50%; /* Adjust as needed */
+  width: 25%; /* Adjust as needed */
   margin: 20px auto; /* Add this line */
 }
 
@@ -41,7 +51,7 @@ input[type="password"] {
 }
 
 .button-signUp {
-  width: 100%;
+  width: 40%;
   padding: 10px;
   border-radius: 4px;
   border: none;
@@ -69,5 +79,8 @@ input[type="password"] {
   .signup-form {
     width: 80%; /* Adjust the width for mobile screens */
     margin: 20px auto; /* Center horizontally on mobile screens */
+  }
+  .button-signUp {
+    width: 100%;
   }
 }
