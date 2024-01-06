@@ -1,25 +1,24 @@
-/* In your CSS file (e.g., Login.css) */
 .register-link {
-  color: rgb(86, 86, 252); /* Set text color to blue */
-  text-decoration: none; /* Remove underline */
+  color: rgb(86, 86, 252); 
+  text-decoration: none; 
   margin-top: -15px;
 }
 
 .register-link:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline; 
 }
 
 .login-title {
-  text-align: center; /* Center the text */
-  margin-bottom: 20px; /* Add some space below the title */
-  font-size: 2em; /* Increase the font size */
+  text-align: center; 
+  margin-bottom: 20px; 
+  font-size: 2em; 
   margin-top: -400px;
 }
-/* In SignUp.css */
+
 .login-main {
   display: flex;
   justify-content: center;
-  flex-direction: column; /* Add this line */
+  flex-direction: column; 
   height: 100vh;
 }
 
@@ -29,8 +28,8 @@
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
-  width: 25%; /* Adjust as needed */
-  margin: 20px auto; /* Add this line */
+  width: 25%; 
+  margin: 20px auto; 
 }
 
 div {
@@ -61,11 +60,11 @@ input[type="password"] {
 }
 
 .button-login:hover {
-  background-color: #0056b3; /* Darker blue when hovered */
+  background-color: #0056b3; 
 }
 
 .button-login:active {
-  background-color: #003d80; /* Even darker blue when clicked */
+  background-color: #003d80; 
 }
 
 .error-message {
@@ -75,12 +74,12 @@ input[type="password"] {
 
 @media (max-width: 600px) {
   .login-title {
-    font-size: 1.5em; /* Adjust font size for mobile screens */
+    font-size: 1.5em; 
   }
 
   .login-form {
-    width: 80%; /* Adjust the width for mobile screens */
-    margin: 20px auto; /* Center horizontally on mobile screens */
+    width: 80%; 
+    margin: 20px auto;
   }
   .button-login {
     width: 100%;
