@@ -5,7 +5,7 @@
 }
 
 .newTasks-textarea {
-  width: 45%; /* Default width for larger screens (like laptops) */
+  width: 45%; 
   height: 500px;
 }
 
@@ -18,22 +18,21 @@
   );
   color: white;
   text-decoration: none;
-  padding: 20px; /* Increase padding for a larger background */
+  padding: 20px; 
   border-radius: 5px;
-  display: block; /* Make the link a block element */
-  width: 20%; /* Set width to cover more of the horizontal screen */
-  margin: 20px; /* Center the link */
+  display: block;
+  width: 20%; 
+  margin: 20px; 
   margin-left: 495px;
 }
 
-/* Add a media query for screens with a maximum width of 600px (mobile screens) */
 @media (max-width: 600px) {
   .newTasks-textarea {
-    width: 100%; /* Increase the width to 100% on mobile screens */
+    width: 100%; 
   }
   .done {
-    width: 80%; /* Adjust the width for mobile screens */
-    margin-left: auto; /* Center the button horizontally on mobile screens */
+    width: 80%; 
+    margin-left: auto; 
     margin-right: auto;
   }
 }
