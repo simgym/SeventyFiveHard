@@ -1,12 +1,12 @@
 .background {
-  padding-top: 4rem; /* Adjust this value to move the heading and table more or less below */
+  padding-top: 4rem; 
 }
 
 .rules {
   text-align: center;
   text-decoration: underline;
   margin-bottom: 2rem;
-  /* Adjust this value to move the heading more or less to the left */
+
 }
 
 .goal-heading {
@@ -57,44 +57,41 @@ table {
   padding-left: 2rem;
 }
 
-/* Media Queries */
-/* Add a media query for screens with a maximum width of 600px */
-/* Add a media query for screens with a maximum width of 600px */
-/* Add a media query for screens with a maximum width of 600px */
+
 @media (max-width: 600px) {
   .table-container {
-    overflow-x: hidden; /* Hide horizontal overflow */
-    padding: 0 1rem; /* Add padding to keep the table borders within the screen */
+    overflow-x: hidden; 
+    padding: 0 1rem; 
   }
 
   table {
     max-width: calc(
       100% - 2rem
-    ); /* Reduce the maximum width of the table container by 2rem */
+    ); 
     border-collapse: collapse;
   }
 
   .rule-item {
-    display: block; /* Change the rule items to block elements for mobile */
-    margin-bottom: 1.5rem; /* Add some spacing between rule items */
-    border: 1px solid #ccc; /* Add a border to separate items */
-    padding: 1rem; /* Add padding to rule items */
+    display: block; 
+    margin-bottom: 1.5rem; 
+    border: 1px solid #ccc; 
+    padding: 1rem;
   }
 
   .rule-title-wrapper {
-    display: block; /* Change rule titles to block elements for mobile */
+    display: block;
   }
 
   .rule-title {
-    text-align: left; /* Align rule titles to the left */
+    text-align: left; 
   }
 
   .rule-content {
-    text-align: left; /* Align rule content to the left */
-    padding-left: 0; /* Remove left padding for rule content */
+    text-align: left; 
+    padding-left: 0; 
   }
   .goal-content {
-    text-align: center; /* Align goal content to the left */
+    text-align: center; 
     margin: 5px;
   }
 }
