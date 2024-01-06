@@ -7,11 +7,11 @@
   );
   color: white;
   text-decoration: none;
-  padding: 20px; /* Increase padding for a larger background */
+  padding: 20px; 
   border-radius: 5px;
-  display: block; /* Make the link a block element */
-  width: 30%; /* Set width to cover more of the horizontal screen */
-  margin: auto; /* Center the link */
+  display: block; 
+  width: 30%; 
+  margin: auto; 
   margin-top: 20px;
 }
 
@@ -40,8 +40,8 @@
   background-color: grey;
   border: 1px solid white;
   color: white;
-  width: 40%; /* Adjust this value as needed */
-  margin: auto; /* Centers the block if width is less than 100% */
+  width: 40%; 
+  margin: auto; 
   border-radius: 20px;
 }
 
@@ -49,18 +49,17 @@
   color: rgb(126, 4, 4);
 }
 
-/* Media Queries */
 @media (max-width: 600px) {
   .edit-task a {
-    width: 80%; /* Adjust this value as needed */
+    width: 80%;
   }
   .tasks-title h2,
   .tasks-added h2 {
-    margin-left: 10%; /* Adjust this value as needed */
-    text-align: center; /* Center the text on small screens */
+    margin-left: 10%; 
+    text-align: center; 
   }
   .tasks-diet,
   .tasks-workout {
-    width: 80%; /* Adjust this value as needed */
+    width: 80%;
   }
 }
