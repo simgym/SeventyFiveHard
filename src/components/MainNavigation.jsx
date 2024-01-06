@@ -27,7 +27,7 @@ const MainNavigation = () => {
                 HomePage
               </NavLink>
             </li>
-            {!auth && ( // Show these links only if the user is not authenticated
+            {!auth && ( 
               <>
                 <li>
                   <NavLink
@@ -51,7 +51,7 @@ const MainNavigation = () => {
                 </li>
               </>
             )}
-            {auth && ( // Show these links only if the user is authenticated
+            {auth && (
               <>
                 <li>
                   <NavLink
