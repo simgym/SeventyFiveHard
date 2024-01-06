@@ -16,7 +16,6 @@ const Tasks = () => {
 
   // Function to render the data with preserved formatting
   const renderFormattedData = (data) => {
-    // Use CSS white-space property to preserve line breaks and spaces
     const style = {
       whiteSpace: "pre-wrap",
     };
@@ -35,10 +34,10 @@ const Tasks = () => {
       );
       const resData = await response.json();
       console.log(resData);
-      setDietData(resData.diet); // Set diet data
-      setWorkoutData(resData.workout); // Set workout data
+      setDietData(resData.diet); 
+      setWorkoutData(resData.workout); 
 
-      setIsLoading(false); // Set loading to false after fetching data
+      setIsLoading(false); 
     };
 
     userData();
