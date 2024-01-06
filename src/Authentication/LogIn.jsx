@@ -26,18 +26,18 @@ const LogIn = () => {
     if (password.trim().length >= 6) {
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-          // Signed in
+    
           const user = userCredential.user;
           console.log(user);
 
-          // Dispatch the user's UID
+    
           dispatch(databaseAction.saveUserData(user.uid));
 
-          dispatch(authAction.authentication()); // Dispatch action on successful login
+          dispatch(authAction.authentication()); 
           navigate("/");
         })
         .catch((error) => {
-          // Handle Errors here.
+  
           const errorCode = error.code;
           let errorMessage = error.message;
 
