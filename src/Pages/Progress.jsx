@@ -33,7 +33,7 @@ const Progress = () => {
       }
     );
 
-    // Hide the "Well done!" message after 3 seconds
+  
     setTimeout(() => {
       setShowWellDone(false);
     }, 3000);
@@ -48,7 +48,7 @@ const Progress = () => {
       const data = await response.json();
       setDisplayButton(data.displayButton);
 
-      setDayCount(data.dayCount || 0); // Use 0 as a default value if dayCount is not yet in Firebase
+      setDayCount(data.dayCount || 0); 
       setIsLoading(false);
     };
 
@@ -57,7 +57,7 @@ const Progress = () => {
 
   const failureHandler = async () => {
     setDayCount(0);
-    setShowWellDone(false); // Ensure "Well done!" is hidden on failure
+    setShowWellDone(false); 
     setShowStartOver(true);
 
     // Update dayCount in Firebase
@@ -90,7 +90,7 @@ const Progress = () => {
     );
 
     if (response.ok) {
-      // Check if request was successful
+      // Checking if request was successful
       const data = await response.json();
       setDisplayButton(data.displayButton);
     } else {
