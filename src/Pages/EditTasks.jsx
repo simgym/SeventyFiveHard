@@ -11,7 +11,7 @@ const EditTasks = () => {
   const dispatch = useDispatch();
   const taskNavigate = useNavigate();
 
-  // Retrieve the diet and workout data from Redux store
+
   const dietData = useSelector((state) => state.taskReducer.diet);
   const workoutData = useSelector((state) => state.taskReducer.workout);
 
@@ -20,36 +20,36 @@ const EditTasks = () => {
 
   const dietHandler = (event) => {
     setDiet(event.target.value);
-    dispatch(taskAction.setDiet(event.target.value)); // Update Redux store
+    dispatch(taskAction.setDiet(event.target.value)); 
   };
 
   const workoutHandler = (event) => {
     setWorkout(event.target.value);
-    dispatch(taskAction.setWorkout(event.target.value)); // Update Redux store
+    dispatch(taskAction.setWorkout(event.target.value)); 
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
 
-    // Get the current user
+
     const user = auth.currentUser;
 
     if (user) {
-      // Get a reference to the database service
+     
       const db = getDatabase();
 
-      // Create a reference to the 'users' node in your database
+    
       const userRef = ref(db, "users/" + user.uid);
 
-      // Update the user data in Firebase
+    
       update(userRef, {
         diet: diet,
         workout: workout,
-        // Add more user data as needed
+
       })
         .then(() => {
           console.log("User data updated successfully.");
-          taskNavigate("/tasks"); // Navigate after form submission is complete
+          taskNavigate("/tasks"); 
         })
         .catch((error) => {
           console.log(error);
